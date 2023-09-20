@@ -1,6 +1,6 @@
 pipeline {
   agent any
-   stages {
+  stages {
     stage ('Build') {
       steps {
         sh '''#!/bin/bash
@@ -11,8 +11,9 @@ pipeline {
         export FLASK_APP=application
         flask run &
         '''
-     }
-   }
+      }
+    }
+    
     stage ('test') {
       steps {
         sh '''#!/bin/bash
@@ -21,13 +22,18 @@ pipeline {
         ''' 
       }
     
-      post{
+      post {
         always {
           junit 'test-reports/results.xml'
         }
-       
+      }
+    }
+
+    stage ('Deploy') {
+      steps {
+        sh '/var/lib/jenkins/.local/bin/eb deploy'
       }
     }
     
   }
- }
+}
