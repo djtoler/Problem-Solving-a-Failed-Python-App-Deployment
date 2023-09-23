@@ -1,7 +1,7 @@
 # Post-Incident Report
 
 ## Problem:
-<pre> #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ </pre>
+> #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 ## Objective:
 > #### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
 ## Incident Summary:
