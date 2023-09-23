@@ -65,15 +65,18 @@
 #### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
 > ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file.
 > > <p align="center">
-> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%2012.40.17%20AM.png">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%2012.40.17%20AM.png" width="75%">
 > </p>
 
 #### _Step 3: Compare current application.py version to the last working version_
-> ##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
+> ##### We couldnt find anything that stood out about the current application.py file, so we searched GitHub logs using...
 > ```
 > git log -p
 >```
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
+> | Version2                            | Version1                 |
+> | ----------------------------------- | ----------------------------------- |
+> | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
 > ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
 > <p align="center">
