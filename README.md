@@ -32,9 +32,9 @@
 > | Wrong JSON Method                   | Correct JSON Method                 |
 > | ----------------------------------- | ----------------------------------- |
 > | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
-> ##### _The first method requires a JSON string. The second method requires a file. Since the first method was used, the new hire tried to pass a string into a method that expects a file.
+> ##### _The first method requires a JSON string. The second method requires a file. Since the first method was used, the new hire tried to pass a string into a method that expects a file._
 
-#### Because this method cant work with a file, our application cant complete this task and our server responds with an error that made our application unavailable._
+#### Because this method cant work with a file, our application cant complete this task and our server responds with an error that made our application unavailable.
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.27.15%20PM.png">
