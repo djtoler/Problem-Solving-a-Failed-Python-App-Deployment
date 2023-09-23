@@ -51,7 +51,7 @@
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
 > ```
 > #### _The command above had overlapping, repetitive text so we tried the "awk" command remove them but we ended up using the "sort" command because we can logically think through how to get our result faster than researching "awk"_
-> * ##### _* We want to generate the logs from our AWS Beanstalk application_
+> * ##### _We want to generate the logs from our AWS Beanstalk application_
 > * ##### _We want to filter the logs, returning every line that mentions "error" and 3 lines of context above and below it_
 > * ##### _We want to number each of the filtered lines to preserve their original order because the "sort" command is going to order them_
 > * ##### _We want to use "sort" to get access to the -u flag to simply remove duplicate lines_
@@ -74,13 +74,13 @@
 > git log -p
 >```
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
-> | Version2                            | Version1                 |
+> | Version 2                           | Version 1                 |
 > | ----------------------------------- | ----------------------------------- |
 > | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
 > ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
 > <p align="center">
-> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/dp3-1.PNG">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/dp3-1.PNG" width="75%">
 > </p>
 
 <p align="center">
