@@ -129,11 +129,11 @@
 </p>
 
 #### Explination of our new error response process:
-> ##### If an engineer writes bad code:
-* > ##### _Error will be caught in their unit test that they now have to have with their code._
-> ##### If bad code makes it pass the unit test:
-* > ##### _Error will be caught in the staging enviornment that we now push our new code to before deploying to production_
-> ##### If bad code makes it into the production enviornment:
-* > ##### _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
-> ##### If bad code makes us have to rollback our application:
-* > ##### _DataDog will alert us that our server went down, then trigger Jenkins (through a webhook) to run a script that downloads and filters our AWS Beanstalk logs for use to troubleshoot._ 
+##### If an engineer writes bad code:
+*  ##### _Error will be caught in their unit test that they now have to have with their code._
+##### If bad code makes it pass the unit test:
+*  ##### _Error will be caught in the staging enviornment that we now push our new code to before deploying to production_
+##### If bad code makes it into the production enviornment:
+*  ##### _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
+##### If bad code makes us have to rollback our application:
+*  ##### _DataDog will alert us that our server went down, then trigger Jenkins (through a webhook) to run a script that downloads and filters our AWS Beanstalk logs for use to troubleshoot._ 
