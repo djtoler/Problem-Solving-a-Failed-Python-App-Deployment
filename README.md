@@ -5,6 +5,9 @@
 </p>
 
 #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG">
+</p>
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.24.05%20PM.png">
@@ -16,6 +19,9 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.25.16%20PM.png">
 </p>
 
+| Wrong JSON Method                   | Correct JSON Method                 |
+| ----------------------------------- | ----------------------------------- |
+| ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
 #### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
 #### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
@@ -57,6 +63,9 @@
 
 #### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
 > ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file.
+> > <p align="center">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%2012.40.17%20AM.png">
+> </p>
 
 #### _Step 3: Compare current application.py version to the last working version_
 > ##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
@@ -66,6 +75,9 @@
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
 > ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
+> <p align="center">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/dp3-1.PNG">
+> </p>
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.47.23%20PM.png">
