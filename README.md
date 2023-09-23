@@ -22,7 +22,7 @@
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
 > ```
-#### The first method takes a JSON string. The second method takes a file. Since the first method was used, the new hire essentially tried to pass a string into a method that expects a file. This caused a server error that made our site unavailable
+#### _The first method takes a JSON string. The second method takes a file. Since the first method was used, the new hire essentially tried to pass a string into a method that expects a file. This caused a server error that made our site unavailable_
 
 
 <p align="center">
