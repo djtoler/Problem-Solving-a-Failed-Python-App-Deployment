@@ -130,6 +130,10 @@
 
 ---
 
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.21.19%20AM.png">
+</p>
+
 #### Explination of our new error response process:
 ##### If an engineer writes bad code:
 *  ##### _Error will be caught in their unit test that they now have to have with their code._
