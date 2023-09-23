@@ -1,13 +1,13 @@
 # Post-Incident Report
 
 ## Problem:
-> ### Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year.
+> #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._
 
 ## Objective:
-> ### Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented
+> #### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
 
 ## Incident Summary:
-> ### The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable.
+> #### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
 
 ## What was the reason for the incident?
 > ### A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. "json.loads(urls_file)" was used instead of the correct "json.load(urls_file)".
