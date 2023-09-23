@@ -77,10 +77,11 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%2010.51.40%20PM.png">
 </p>
 
-##### 1) To prevent this from happening again, we initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
-##### 2) We breakdown each step that happend in our incedent to identify points in our response process where we can make improvements...
+#### To prevent this from happening again...
 
-* ### _Old Response Process_
+##### 1) We initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
+##### 2) We breakdown each step that happend in our incedent to identify points in our response process where we can make improvements. Our process looked like this...
+
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/5.drawio.png">
 > </p>
@@ -89,7 +90,7 @@
 ##### 4) We ask our 5 whys and identify their causes
 ##### 5) We identify the overall root cause of our problem
 
-* ### _Problem Solving_
+> ### _Problem Solving_
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/6.drawio.png">
 > </p>
@@ -98,14 +99,14 @@
 ##### 7) We implement 1 responsive fix that protects us from violating our SLA, by automating a process that immediatly restores our application to the last working version. This will keep downtime to a matter of seconds.
 ##### 8) We implement 1 responsive improvement by automating a process that instantly sends us error logs after a server goes down. This will signigantly speed up troubleshooting if the other 3 methods happen to fail.
 
+#### Our new error response process currently looks like this:
 
-* > ### With these new fixes in place...
-* > #### If an engineer writes bad code: _Error will be caught in their unit test that they now have to have with their code._
-* > #### If bad code makes it pass the unit test: _Error will be caught in the staging enviornment that we now push our new code to before deploying to production_
-* > #### If bad code makes it into the production enviornment: _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
-* > #### If bad code makes us have to rollback our application: _DataDog will alert us that our server went down, then trigger Jenkins (through a webhook) to run a script that downloads and filters our AWS Beanstalk logs for use to troubleshoot._ 
-
-* ### _New Response Process_
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/7.drawio.png">
 </p>
+
+#### Our new error response process explained:
+> ##### If an engineer writes bad code: _Error will be caught in their unit test that they now have to have with their code._
+> ##### If bad code makes it pass the unit test: _Error will be caught in the staging enviornment that we now push our new code to before deploying to production_
+> ##### If bad code makes it into the production enviornment: _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
+> ##### If bad code makes us have to rollback our application: _DataDog will alert us that our server went down, then trigger Jenkins (through a webhook) to run a script that downloads and filters our AWS Beanstalk logs for use to troubleshoot._ 
