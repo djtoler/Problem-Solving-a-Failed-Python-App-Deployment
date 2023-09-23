@@ -33,20 +33,20 @@
 > ```
 
 ### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
->#### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
+> ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
 
 ### _Step 3: Compare current application.py version to the last working version_
-#### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
+##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
 > ```
 > git log -p
 >```
 #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
 
 ### _Step 4: Make the change to the JSON method and push the update to trigger a redeployment_
-#### In application.py we changed json.loads() but version2 used json.load()
+##### In application.py we changed json.loads() but version2 used json.load()
 
 ### _Step 5: Test our URL shortening feature again_
-#### We go back to our application and enter a URL to be shortened and it works
+##### We go back to our application and enter a URL to be shortened and it works
 
 ## Was the incident fully resolved?
 > ### The incident was fully resolved after identifying and fixing the error in the application.py file.
