@@ -38,6 +38,7 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
 </p>
 
+
 #### _Step 1: EBS logs were examined using the following bash command:_ 
 > ```
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
