@@ -33,13 +33,13 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.20%20PM.png">
 </p>
 
-#### _The site was down for a total of 23 minutes._
+> ### _The site was down for a total of 23 minutes._
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
 </p>
 
 
-#### _Step 1: EBS logs were examined using the following bash command:_ 
+> ### _Step 1: EBS logs were examined using the following bash command:_ 
 > ```
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
 > ```
@@ -55,16 +55,15 @@
 > eb logs | grep -C 3 'error' | nl -w3 -s':' | sort -u -k2,2 | sort -n -k1,1 > error_hunt_filtered.txt
 > ```
 
-#### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
+> ### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
 > ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
 
-#### _Step 3: Compare current application.py version to the last working version_
+> ### _Step 3: Compare current application.py version to the last working version_
 > ##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
 > ```
 > git log -p
 >```
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
-
 > ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
 
