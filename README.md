@@ -41,7 +41,7 @@
 </p>
 
 #### _The site was down for a total of 23 minutes._
-<p align="center">
+<p align="left">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
 </p>
 
@@ -114,7 +114,7 @@
 
 #### _Generate 4 stratagies to help us prevent downtime or signifigantly reduce downtime in the areas it cant be prevented..._
 
-> <p align="center">
+> <p align="left">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/solutions.PNG" width="75%">
 > </p>
 
