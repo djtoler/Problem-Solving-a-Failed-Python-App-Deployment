@@ -4,13 +4,23 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.23.46%20PM.png">
 </p>
 
-##### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
+#### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 
-## Objective:
-##### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
-## Incident Summary:
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.24.05%20PM.png">
+</p>
 
-##### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
+#### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
+
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.25.16%20PM.png">
+</p>
+
+#### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
+
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.27.15%20PM.png">
+</p>
 
 ## What was the reason for the incident?
 > ### A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. "json.loads(urls_file)" was used instead of the correct "json.load(urls_file)".
