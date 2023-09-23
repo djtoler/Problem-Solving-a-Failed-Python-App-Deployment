@@ -1,4 +1,6 @@
-# Post-Incident Report
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.56.51%20AM.png">
+</p>
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.23.46%20PM.png">
@@ -122,8 +124,8 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.21.19%20AM.png">
 </p>
 
-> <p align="left">
-> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/solutions.PNG" width="75%">
+> <p align="center">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.58.35%20AM.png" width="75%">
 > </p>
 
 #### Our new error response process currently looks like this:
