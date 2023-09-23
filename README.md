@@ -3,10 +3,6 @@
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.23.46%20PM.png">
 </p>
-<p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="50%">
-</p>
-
 
 #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 
@@ -20,15 +16,22 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.25.16%20PM.png">
 </p>
 
-| Wrong JSON Method                   | Correct JSON Method                 |
-| ----------------------------------- | ----------------------------------- |
-| ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
-##### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable. A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
+##### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable. 
+
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="50%">
+</p>
+
+A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
 > ```
-##### _The first method takes a JSON string. The second method takes a file. Since the first method was used, the new hire essentially tried to pass a string into a method that expects a file. This caused a server error that made our site unavailable_
+> 
+> | Wrong JSON Method                   | Correct JSON Method                 |
+> | ----------------------------------- | ----------------------------------- |
+> | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
+##### _The first method requires a JSON string. The second method requires a file. Since the first method was used, the new hire tried to pass a string into a method that expects a file. Because this method cant work with a file, our application cant complete this task and our server responds with an error that made our application unavailable._
 
 
 <p align="center">
