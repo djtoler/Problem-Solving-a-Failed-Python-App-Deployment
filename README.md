@@ -16,8 +16,14 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.25.16%20PM.png">
 </p>
 
-### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
-### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. "json.loads(urls_file)" was used instead of the correct "json.load(urls_file)"._
+#### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
+#### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. 
+> ```
+> json.loads(urls_file)  #Wrong method
+> json.load(urls_file)   #Correct method
+> ```
+> #### The first method takes a JSON string. The second method takes a file. Since the first method was used, the new hire essentially tried to pass a string into a method that expects a file. This caused a server error that made our site unavailable
+
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.27.15%20PM.png">
@@ -28,7 +34,6 @@
 </p>
 
 #### _The site was down for a total of 23 minutes._
-
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
 </p>
