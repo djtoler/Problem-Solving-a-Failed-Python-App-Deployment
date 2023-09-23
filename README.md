@@ -122,6 +122,10 @@
 > ##### 7) We implement 1 responsive fix that protects us from violating our SLA, by automating a process that immediatly restores our application to the last working version. This will keep downtime to a matter of seconds.
 > ##### 8) We implement 1 responsive improvement by automating a process that instantly sends us error logs after a server goes down. This will signigantly speed up troubleshooting if the other 3 methods happen to fail.
 
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.21.19%20AM.png">
+</p>
+
 #### Our new error response process currently looks like this:
 
 <p align="center">
@@ -130,9 +134,6 @@
 
 ---
 
-<p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-23%20at%208.21.19%20AM.png">
-</p>
 
 #### Explination of our new error response process:
 ##### If an engineer writes bad code:
