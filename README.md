@@ -14,7 +14,7 @@
 > ### The site was down for a total of 23 minutes.
 
 ## What steps were taken to resolve the incident?
-> ### _Step 1: EBS logs were examined using the following bash command:_ 
+### _Step 1: EBS logs were examined using the following bash command:_ 
 
 > ```
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
@@ -34,23 +34,21 @@
 > eb logs | grep -C 3 'error' | nl -w3 -s':' | sort -u -k2,2 | sort -n -k1,1 > error_hunt_filtered.txt
 > ```
 
-> ### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
+### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
 >#### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
 
-> ### _Step 3: Compare current application.py version to the last working version_
+### _Step 3: Compare current application.py version to the last working version_
 #### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
 > ```
 > git log -p
 >```
 #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
 
-> ### _Step 4: Make the change to the JSON method and push the update to trigger a redeployment_
+### _Step 4: Make the change to the JSON method and push the update to trigger a redeployment_
 #### In application.py we changed json.loads() but version2 used json.load()
 
-> ### _Step 5: Test our URL shortening feature again_
+### _Step 5: Test our URL shortening feature again_
 #### We go back to our application and enter a URL to be shortened and it works
-
------------------------------------------
 
 ## Was the incident fully resolved?
 > ### The incident was fully resolved after identifying and fixing the error in the application.py file.
@@ -74,12 +72,6 @@
 > ### 7) We implement 1 responsive fix that protects us from violating our SLA, by automating a process that immediatly restores our application to the last working version. This will keep downtime to a matter of seconds.
 
 > ### 8) We implement 1 responsive improvement by automating a process that instantly sends us error logs after a server goes down. This will signigantly speed up troubleshooting if the other 3 methods happen to fail.
-
-<p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/6.drawio.png">
-</p>
-
------------------------------------------
 
 > ### - With these new fixes in place...
 > ### - If an engineer writes bad code: _Error will be caught in their unit test that they now have to have with their code._
