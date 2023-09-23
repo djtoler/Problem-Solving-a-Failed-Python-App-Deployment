@@ -23,8 +23,7 @@
 | Wrong JSON Method                   | Correct JSON Method                 |
 | ----------------------------------- | ----------------------------------- |
 | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
-#### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
-#### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
+#### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable. A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
