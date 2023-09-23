@@ -93,22 +93,29 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%2010.51.40%20PM.png">
 </p>
 
-#### To prevent this from happening again...
+#### _Breakdown our current incedent response and prevention process..._
 
 ##### 1) We initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
-##### 2) We breakdown each step that happend in our incedent to identify points in our response process where we can make improvements. Our process looked like this...
+##### 2) We layout each step that happend in our incedent to identify points in our response process where we can make improvements. Our process looked like this...
 
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/5.drawio.png">
 > </p>
 
+#### _Work through each section of our problem solving process..._
+
 ##### 3) We identify which problem we want to solve for
 ##### 4) We ask our 5 whys and identify their causes
 ##### 5) We identify the overall root cause of our problem
 
-> ### _Problem Solving_
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/6.drawio.png">
+> </p>
+
+#### _Generate 4 stratagies to help us prevent downtime or signifigantly reduce downtime in the areas it cant be prevented..._
+
+> <p align="center">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/solutions.PNG" width="75%">
 > </p>
 
 ##### 6) We implement 2 preventitive fixes to our CICD pipeline. This will prevent any similar incedent from causing any amount of downtime.
