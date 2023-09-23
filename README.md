@@ -74,7 +74,7 @@
 ##### The incident was fully resolved after identifying and fixing the error in the application.py file.
 
 <p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.47.59%20PM.png">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%2010.44.45%20PM.png">
 </p>
 
 ##### 1) To prevent this from happening again, we initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
