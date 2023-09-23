@@ -27,7 +27,7 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.20%20PM.png">
 </p>
 
-### The site was down for a total of 23 minutes.
+#### _The site was down for a total of 23 minutes._
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
