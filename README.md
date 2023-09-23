@@ -17,10 +17,9 @@
 </p>
 
 > ##### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._ 
-
-<p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="70%">
-</p>
+> <p align="center">
+> <img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="70%">
+> </p>
 
 _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
