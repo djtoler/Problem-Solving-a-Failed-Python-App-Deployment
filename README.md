@@ -3,11 +3,11 @@
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.23.46%20PM.png">
 </p>
-
-#### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG">
 </p>
+
+#### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.24.05%20PM.png">
