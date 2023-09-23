@@ -17,7 +17,7 @@
 </p>
 
 > ##### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._ 
-> <p align="center">
+> <p align="left">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="70%">
 > </p>
 
@@ -79,7 +79,7 @@
 > | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
 > ##### In application.py we changed json.loads() from version2 to json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
-> <p align="center">
+> <p align="left">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/dp3-1.PNG" width="75%">
 > </p>
 
