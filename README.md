@@ -23,7 +23,6 @@
 > ```
 
 > #### The command above had overlapping, repetitive text so we tried the "awk" command remove them but we ended up using the "sort" command because we can logically think through how to get our result faster than researching "awk"
-
 > ##### _We want to generate the logs from our AWS Beanstalk application_
 > ##### _We want to filter the logs, returning every line that mentions "error" and 3 lines of context above and below it_
 > ##### _We want to number each of the filtered lines to preserve their original order because the "sort" command is going to order them_
