@@ -20,7 +20,8 @@
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/500error.PNG" width="70%">
 > </p>
-_A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
+
+> ##### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
