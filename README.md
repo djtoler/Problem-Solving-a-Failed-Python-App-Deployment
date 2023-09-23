@@ -59,10 +59,6 @@
 >```
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
 
-<p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.45.24%20PM.png">
-</p>
-
 > ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
 
