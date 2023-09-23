@@ -4,20 +4,20 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.23.46%20PM.png">
 </p>
 
-### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
+#### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.24.05%20PM.png">
 </p>
 
-### _Prevent downtime or signifigantly reduce downtime in the areas it cant be prevented_
+#### _Prevent downtime or signifigantly reduce downtime in the areas it cant be prevented_
 
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.25.16%20PM.png">
 </p>
 
 #### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
-#### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. 
+#### _A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method._
 > ```
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
