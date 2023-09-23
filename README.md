@@ -39,7 +39,7 @@
 </p>
 
 
-> ### _Step 1: EBS logs were examined using the following bash command:_ 
+### _Step 1: EBS logs were examined using the following bash command:_ 
 > ```
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
 > ```
@@ -54,8 +54,10 @@
 > ```
 > eb logs | grep -C 3 'error' | nl -w3 -s':' | sort -u -k2,2 | sort -n -k1,1 > error_hunt_filtered.txt
 > ```
+> 
 > ### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
-> ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
+> ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file.
+> 
 > ### _Step 3: Compare current application.py version to the last working version_
 > ##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
 > ```
