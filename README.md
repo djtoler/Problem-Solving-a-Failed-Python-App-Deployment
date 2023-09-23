@@ -60,7 +60,7 @@
 
 > ### 2) We breakdown each step that happend in our incedent to identify points in our response process where we can make improvements...
 
-> ## Old Response Process
+## Old Response Process
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/5.drawio.png">
 </p>
@@ -70,10 +70,9 @@
 > ### 5) We identify the overall root cause of our problem
 
 > ### 6) We implement 2 preventitive fixes to our CICD pipeline. This will prevent any similar incedent from causing any amount of downtime.
-
 > ### 7) We implement 1 responsive fix that protects us from violating our SLA, by automating a process that immediatly restores our application to the last working version. This will keep downtime to a matter of seconds.
-
 > ### 8) We implement 1 responsive improvement by automating a process that instantly sends us error logs after a server goes down. This will signigantly speed up troubleshooting if the other 3 methods happen to fail.
+
 
 > ### - With these new fixes in place...
 > ### - If an engineer writes bad code: _Error will be caught in their unit test that they now have to have with their code._
