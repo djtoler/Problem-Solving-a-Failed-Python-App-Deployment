@@ -1,10 +1,10 @@
 # Post-Incident Report
 
 ## Problem:
-> #### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
+#### _Our application was down for 23 minutes in a single day but we have a SLA that only allows for 15 minutes per year._ 
 
 ## Objective:
-> #### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
+#### _Prevent downtime & signifigantly reduce downtime in the areas it cant be prevented_
 ## Incident Summary:
 > #### _The URL shortener application was down because of a recent update made by a new hire. The application error resulted in a 500 internal server error, which caused the website to be unavailable._
 
