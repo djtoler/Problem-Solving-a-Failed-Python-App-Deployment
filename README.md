@@ -22,14 +22,23 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.27.15%20PM.png">
 </p>
 
-## What was the reason for the incident?
-> ### A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. "json.loads(urls_file)" was used instead of the correct "json.load(urls_file)".
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.24.05%20PM.png">
+</p>
 
-## How long was the site down or malfunctioning?
-> ### The site was down for a total of 23 minutes.
+### A new hire committed version 2 of our application to the main branch, which had an incorrect usage of a JSON method. "json.loads(urls_file)" was used instead of the correct "json.load(urls_file)".
 
-## What steps were taken to resolve the incident?
-### _Step 1: EBS logs were examined using the following bash command:_ 
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.20%20PM.png">
+</p>
+
+### The site was down for a total of 23 minutes.
+
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.46.59%20PM.png">
+</p>
+
+#### _Step 1: EBS logs were examined using the following bash command:_ 
 > ```
 > eb logs | grep -i -C 10 "error" > error_hunt.txt
 > ```
@@ -45,30 +54,37 @@
 > eb logs | grep -C 3 'error' | nl -w3 -s':' | sort -u -k2,2 | sort -n -k1,1 > error_hunt_filtered.txt
 > ```
 
-### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
+#### _Step 2: GitHub was searched for the JSON method found in the logs:_ 
 > ##### We spotted some lines mentioning errors related to JSON processing. We searched for json.loads() in our application.py file. 
 
-### _Step 3: Compare current application.py version to the last working version_
+#### _Step 3: Compare current application.py version to the last working version_
 > ##### We couldnt find anything that stood out about the current application.py file so we, searched GitHub logs using...
 > ```
 > git log -p
 >```
 > #### This is where we found of version 1 of application.py used json.load() but version2 used json.loads()
 
-### _Step 4: Make the change to the JSON method and push the update to trigger a redeployment_
-> ##### In application.py we changed json.loads() but version2 used json.load()
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.45.24%20PM.png">
+</p>
 
-### _Step 5: Test our URL shortening feature again_
+> ##### In application.py we changed json.loads() but version2 used json.load()
 > ##### We go back to our application and enter a URL to be shortened and it works
 
-## Was the incident fully resolved?
-> ##### The incident was fully resolved after identifying and fixing the error in the application.py file.
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.47.23%20PM.png">
+</p>
 
-## What steps would you take to prevent this from happening again?
+##### The incident was fully resolved after identifying and fixing the error in the application.py file.
+
+<p align="center">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%209.47.59%20PM.png">
+</p>
+
 > #### 1) To prevent this from happening again, we initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
 > #### 2) We breakdown each step that happend in our incedent to identify points in our response process where we can make improvements...
 
-> ## Old Response Process
+* ### _Old Response Process_
 > <p align="center">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/5.drawio.png">
 > </p>
@@ -88,7 +104,7 @@
 * > #### If bad code makes it into the production enviornment: _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
 * > #### If bad code makes us have to rollback our application: _DataDog will alert us that our server went down, then trigger Jenkins (through a webhook) to run a script that downloads and filters our AWS Beanstalk logs for use to troubleshoot._ 
 
-> ## New Response Process
+* ### _New Response Process_
 <p align="center">
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/7.drawio.png">
 </p>
