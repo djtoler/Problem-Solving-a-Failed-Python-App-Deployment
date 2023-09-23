@@ -128,7 +128,7 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/7.drawio.png">
 </p>
 
-#### Our new error response process explained:
+#### Explination of our new error response process:
 > ##### If an engineer writes bad code: _Error will be caught in their unit test that they now have to have with their code._
 > ##### If bad code makes it pass the unit test: _Error will be caught in the staging enviornment that we now push our new code to before deploying to production_
 > ##### If bad code makes it into the production enviornment: _A Jenkins job will be triggered that runs a script will that automatically rollback our application to the last working version_ 
