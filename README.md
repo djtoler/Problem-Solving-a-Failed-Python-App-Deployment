@@ -105,7 +105,7 @@
 <img src="https://github.com/djtoler/dp3-1/blob/main/assets/Screenshot%202023-09-22%20at%2010.51.40%20PM.png">
 </p>
 
-#### _Breakdown our current incedent response and prevention process..._
+#### _FIRST: Breakdown our current incedent response and prevention process..._
 
 > ##### 1) We initiate a problem solving process that will help us identify oppertunities for immediate countermeasures, preventitive measures & a root cause...
 > ##### 2) We layout each step that happend in our incedent to identify points in our response process where we can make improvements. Our process looked like this...
@@ -114,7 +114,19 @@
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/5.drawio.png">
 > </p>
 
-#### _Work through each section of our problem solving process..._
+> * #### Our Sequence of Events
+> * ##### _GREEN Block 2: Why didnt our CICD pipline protect us from deploying bad code???
+> * ##### _GREEN Block 3: Why did we use a deployment strategy that leaves room for our application to go down & we're in a SLA that only allows for 15 mins of downtime/yr???_
+> * ##### _RED Block 1: If our downtime timer starts as soon as our application goes down, why didnt we have a way to get it back up instantly???_
+> * ##### _RED Block 2 & 3: If we had to use the EBS UI and search Google for a bash command to pull and filter our log, why isnt that automated???_
+> * ##### _RED Block 4: Is there a faster, more reliable, automated way to have our error logs interpreted???_
+> * ##### _RED Block 5: Is there a faster, more reliable, automated way to compare our applications file versions???_
+> * ##### _RED Block 6: Is there a faster but reliable, automated way to fix, push and test possible error fixes in our applications??? Can we test all possible fixes simtaniously, in safe isolated enviornments and use a rolling deployment strategy for a fix that actually worked???_
+
+> * #### Users Sequence of Events
+> * ##### _RED Block 1-3: Can we handle these errors in a way that keeps our server up? Can we still give our user what they came for but in a different way if the first method fails???_
+
+#### _SECOND: Work through each section of our problem solving process..._
 
 > ##### 3) We identify which problem we want to solve for
 > ##### 4) We ask our 5 whys and identify their causes
@@ -124,7 +136,7 @@
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/6.drawio.png">
 > </p>
 
-#### _Generate 4 stratagies to help us prevent downtime or signifigantly reduce downtime in the areas it cant be prevented..._
+#### _THIRD: Generate 4 stratagies to help us prevent downtime or signifigantly reduce downtime in the areas it cant be prevented..._
 
 > ##### 6) We implement 2 preventitive fixes to our CICD pipeline. This will prevent any similar incedent from causing any amount of downtime.
 > ##### 7) We implement 1 responsive fix that protects us from violating our SLA, by automating a process that immediatly restores our application to the last working version. This will keep downtime to a matter of seconds.
