@@ -153,7 +153,7 @@
 #### Our new error response process currently looks like this:
 
 <p align="center">
-<img src="https://github.com/djtoler/dp3-1/blob/main/assets/7.drawio.png">
+<img src="https://github.com/djtoler/dp3-1/blob/main/assets/Untitled%20Diagram.drawio.png">
 </p>
 
 ---
