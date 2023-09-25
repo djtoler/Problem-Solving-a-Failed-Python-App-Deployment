@@ -89,7 +89,7 @@
 > | Version 2                           | Version 1                 |
 > | ----------------------------------- | ----------------------------------- |
 > | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
-> ##### In application.py we changed json.loads() from version2 to json.load()
+> ##### In application.py we changed json.loads() from version2 to json.load() and pushed our updated code.
 > ##### We go back to our application and enter a URL to be shortened and it works
 > <p align="left">
 > <img src="https://github.com/djtoler/dp3-1/blob/main/assets/dp3-1.PNG" width="75%">
