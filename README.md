@@ -28,10 +28,11 @@
 > json.loads(urls_file)  #Wrong method
 > json.load(urls_file)   #Correct method
 > ```
+> #### _Below, we can see that the code is nearly identical  besides an single, additional wrong letter (.loads vs .load) in version 2._
 > 
-> | Wrong JSON Method                   | Correct JSON Method                 |
+> | Wrong JSON Method (v2)                  | Correct JSON Method (v1)                |
 > | ----------------------------------- | ----------------------------------- |
-> | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) | 
+> | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/loads.PNG) | ![aaaaaa.png](https://github.com/djtoler/dp3-1/blob/main/assets/load.PNG) |
 > ##### _The first method requires a JSON string. The second method requires a file. Since the first method was used, the new hire tried to pass a string into a method that expects a file._
 
 #### Because this method cant work with a file, our application cant complete this task and our server responds with an error that made our application unavailable.
