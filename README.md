@@ -53,7 +53,12 @@
 
 #### _Step 1: EBS logs were examined using the following bash command:_ 
 > ```
-> eb logs | grep -i -C 10 "error" > error_hunt.txt
+> #This command  will pull the most recent logs from outlr application using "ebs logs"
+> #We take the output of the "ebs logs" command and run the "grep" command on it that will return us every line that has the word "error" on it.
+> #We use the "-i" flag to make it case insensitive so that we account for rvery form an error can be output in
+> #To give ourselves a little more context to help troubleshooting, we use the "-C 5" flag to also capture the the 5 lines before and after the line that actually has "error" on it
+> 
+> eb logs | grep -i -C 5 "error" > error_hunt.txt
 > ```
 > #### _The command above had overlapping, repetitive text so we tried the "awk" command remove them but we ended up using the "sort" command because we can logically think through how to get our result faster than researching "awk"_
 > * ##### _We want to generate the logs from our AWS Beanstalk application_
