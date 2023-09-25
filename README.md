@@ -60,7 +60,14 @@
 > 
 > eb logs | grep -i -C 5 "error" > error_hunt.txt
 > ```
-> #### _The command above had overlapping, repetitive text so we tried the "awk" command remove them but we ended up using the "sort" command because we can logically think through how to get our result faster than researching "awk"_
+
+> ##### This command  will pull the most recent logs from outlr application using "ebs logs"
+> ##### #We take the output of the "ebs logs" command and run the "grep" command on it that will return us every line that has the word "error" on it.
+> ##### We use the "-i" flag to make it case insensitive so that we account for rvery form an error can be output in
+> ##### To give ourselves a little more context to help troubleshooting, we use the "-C 5" flag to also capture the the 5 lines before and after the line that actually has "error" on it
+
+
+> #### _The output from that command had overlapping, repetitive text so we tried the "awk" command remove them but we ended up using the "sort" command because we can logically think through how to get our result faster than researching "awk"_
 > * ##### _We want to generate the logs from our AWS Beanstalk application_
 > * ##### _We want to filter the logs, returning every line that mentions "error" and 3 lines of context above and below it_
 > * ##### _We want to number each of the filtered lines to preserve their original order because the "sort" command is going to order them_
